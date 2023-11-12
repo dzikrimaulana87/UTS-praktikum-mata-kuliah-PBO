@@ -8,6 +8,9 @@ package uts_praktikum_no1;
  *
  * @author dzikr
  */
+
+//###### konsep inheritence (kelas anakan)
+
 class Kucing extends Hewan {
     // Konstruktor
     public Kucing() {
@@ -15,6 +18,7 @@ class Kucing extends Hewan {
         this.isMamal = true;
     }
 
+    //Konsep Polymorphism
     // Override metode bersuara
     @Override
     public void bersuara() {

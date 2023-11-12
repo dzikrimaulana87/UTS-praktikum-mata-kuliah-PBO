@@ -7,9 +7,16 @@ package uts_praktikum_no2;
  *
  * @author dzikr
  */
+
+//###### konsep inheritence (kelas anakan)
 class Admin extends Pengguna implements AksesAdmin {
+    
+    public Admin(String nama){
+        super.nama = nama;
+    }
 
 
+    //###### konsep polymorphism
     @Override
     public void tambahBuku(Buku buku) {
         Buku.tambahBuku(buku);

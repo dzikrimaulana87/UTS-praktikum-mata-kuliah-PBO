@@ -8,6 +8,7 @@ package uts_praktikum_no1;
  *
  * @author dzikr
  */
+//###### konsep inheritence (kelas anakan)
 class Anjing extends Hewan {
 
     // Konstruktor
@@ -16,6 +17,7 @@ class Anjing extends Hewan {
         this.isMamal = true;
     }
 
+    //Konsep Polymorphism
     // Override metode bersuara
     @Override
     public void bersuara() {

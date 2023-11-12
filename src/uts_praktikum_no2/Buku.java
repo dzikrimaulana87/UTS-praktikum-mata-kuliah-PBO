@@ -14,6 +14,8 @@ import java.util.Iterator;
  */
 class Buku {
 
+    //###### contoh konsep enkapsulasi (masih banyak yang lainnya di class lain)
+    
     private static List<Buku> daftarBuku = new ArrayList<>();
 
     private String idBuku;
@@ -47,18 +49,17 @@ class Buku {
         System.out.println("Buku berhasil ditambahkan.");
     }
 
-public static void lihatDaftarBuku() {
-    System.out.println("Daftar Buku:");
+    public static void lihatDaftarBuku() {
+        System.out.println("Daftar Buku:");
 
-    if (daftarBuku.isEmpty()) {
-        System.out.println("\nBelum ada buku didalam daftar, hubungi Admin...\n");
-    } else {
-        for (Buku buku : daftarBuku) {
-            System.out.println("ID: " + buku.getIdBuku() + ", Judul: " + buku.getJudul() + ", Genre: " + buku.getGenre());
+        if (daftarBuku.isEmpty()) {
+            System.out.println("\nBelum ada buku didalam daftar, hubungi Admin...\n");
+        } else {
+            for (Buku buku : daftarBuku) {
+                System.out.println("ID: " + buku.getIdBuku() + ", Judul: " + buku.getJudul() + ", Genre: " + buku.getGenre());
+            }
         }
     }
-}
-
 
     public static void hapusBuku(String idBuku) {
         Iterator<Buku> iterator = daftarBuku.iterator();

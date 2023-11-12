@@ -8,7 +8,6 @@ package uts_praktikum_no2;
  *
  * @author dzikr
  */
-
 import java.util.Scanner;
 
 public class PerpustakaanDemo {
@@ -24,25 +23,28 @@ public class PerpustakaanDemo {
 
             // Keluar dari program jika pengguna memilih "keluar"
             if ("keluar".equalsIgnoreCase(jenisPengguna)) {
-                System.out.println("Terima kasih, keluar dari program.");
+                System.out.println("Terima kasih, keluar dari program...");
                 break;
             }
 
             Pengguna pengguna;
+
+            System.out.print("Masukkan nama Anda : ");
+            String nama = scanner.nextLine();
+
             if ("admin".equalsIgnoreCase(jenisPengguna)) {
-                System.out.println("Anda Masuk sebagai Admin");
-                pengguna = new Admin();
+                pengguna = new Admin(nama);
+                System.out.println("Selamat datang admin " + pengguna.nama + "\nAnda Masuk sebagai Admin");
             } else if ("user".equalsIgnoreCase(jenisPengguna)) {
-                System.out.print("Anda Masuk sebagai users, masukkan nama : ");
-                String nama = scanner.nextLine();
+                System.out.println("Anda Masuk sebagai users");
                 pengguna = new User(nama);
-                System.out.println("Selamat datang di perpustakaan, " + nama);
+                System.out.println("Selamat datang di perpustakaan, " + pengguna.nama);
             } else {
                 System.out.println("Jenis pengguna tidak valid.");
                 continue;
             }
 
-            Admin admin = new Admin();
+            Admin admin = new Admin(nama);
 
             // Loop untuk menu
             while (true) {

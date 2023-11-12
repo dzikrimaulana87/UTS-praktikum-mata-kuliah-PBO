@@ -8,6 +8,7 @@ package uts_praktikum_no1;
  *
  * @author dzikr
  */
+//###### konsep inheritence (kelas induk)
 class Hewan {
 
     protected String jenisSuara;

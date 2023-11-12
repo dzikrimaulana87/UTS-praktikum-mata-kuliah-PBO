@@ -8,6 +8,8 @@ package uts_praktikum_no2;
  *
  * @author dzikr
  */
+
+//######  konsep abstraksi
 interface AksesAdmin {
     void tambahBuku(Buku buku);
     void lihatBuku();

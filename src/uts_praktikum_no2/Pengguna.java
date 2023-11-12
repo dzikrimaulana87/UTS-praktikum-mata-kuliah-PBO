@@ -8,6 +8,8 @@ package uts_praktikum_no2;
  *
  * @author dzikr
  */
+
+//###### konsep inheritence (kelas induk)
 abstract class Pengguna {
     
     String nama;
